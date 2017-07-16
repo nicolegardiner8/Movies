@@ -8,6 +8,7 @@ namespace Movies.Controllers
     {
         private ReviewRepository reviewRepository;
 
+        //Submit
         [HttpGet]
         public ActionResult Submit()
         {
@@ -27,6 +28,7 @@ namespace Movies.Controllers
             return RedirectToAction("Reviews");
         }
 
+        //Edit 
         [HttpGet]
         public ActionResult Edit(int id)
         {
@@ -52,6 +54,7 @@ namespace Movies.Controllers
             return View(reviews);
         }
 
+        //Delete
         [HttpGet]
         public ActionResult Delete(int id)
         {
@@ -60,6 +63,7 @@ namespace Movies.Controllers
             return View(review);
         }
 
+        
         [HttpPost]
         public ActionResult Delete(Review review)
         {
@@ -68,6 +72,7 @@ namespace Movies.Controllers
             return RedirectToAction("Reviews");
         }
 
+        //Details
         [HttpGet]
         public ActionResult Details(int id)
         {

@@ -8,7 +8,7 @@ namespace Movies.Repositories
 {
     public class ReviewRepository
     {
-
+        //Create
         public void Create(Review review)
         {
             using (var context = new Context())
@@ -19,6 +19,7 @@ namespace Movies.Repositories
             }
         }
 
+        //Edit
         public void Update(Review review)
         {
             using (var context = new Context())
@@ -33,6 +34,7 @@ namespace Movies.Repositories
             }
         }
 
+        //Delete
         public void Delete(int id)
         {
             using (var context = new Context())
@@ -44,6 +46,7 @@ namespace Movies.Repositories
             }
         }
 
+        //Retrieve reviews
         public List<Review> GetAllReviews()
         {
             List<Review> reviews = new List<Review>();

@@ -1,0 +1,53 @@
+﻿<link href="@Url.Content("~/Content/MyStyles.css")" rel=" stylesheet" type="text/css" />
+@model IEnumerable<Movies.Models.Review>
+
+<h2 class="text-center">Reviews</h2>
+
+
+
+<table class="table table-striped table-bordered">
+    <tr class="active">
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StarRating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recommend)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comments)
+        </th>
+        <th>
+            Actions
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="success">
+            <td class="success">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td class="success">
+                @Html.DisplayFor(modelItem => item.StarRating)
+            </td>
+            <td class="success">
+                @Html.DisplayFor(modelItem => item.Recommend)
+            </td>
+            <td class="success">
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td class="success">
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) 
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) 
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<p>
+    @Html.ActionLink("Add New", "Submit", null, new { @class = "homebutton" })
+</p>

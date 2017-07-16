@@ -1,0 +1,26 @@
+﻿body {
+    background-color:mediumseagreen;
+}
+
+.homefeatures {
+    background-color:mediumseagreen;
+    color:white;
+}
+
+.homebutton {
+    color: white;
+}
+
+.sizeone {
+    padding-top: 1em;
+    font-size:3.5em;
+}
+
+.sizetwo {
+    font-size:2em;
+    padding-bottom:.45em;
+}
+
+.textfeature {
+    font-size: .25em;
+}

@@ -1,0 +1,62 @@
+﻿<link href="@Url.Content("~/Content/MyStyles.css")" rel=" stylesheet" type="text/css" />
+@model Movies.Models.Review
+
+<h2 class="text-center">Add Review</h2>
+
+@using (Html.BeginForm("submitreview", "review"))
+
+{
+    <div class="form-horizontal">
+            <div class="form-group">
+                @*Movie Name*@
+                @Html.LabelFor(m => m.Name, new { @class = "control-label col-sm-5" })
+                <div class=" col-sm-7">
+                    @Html.TextBoxFor(m => m.Name, "Movie Name", new { @class = "form-control", required = "required"})
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                @*Star Rating*@
+                @Html.LabelFor(m => m.StarRating, new { @class = "control-label  col-sm-5" })
+                <div class=" col-sm-7">
+                    @Html.DropDownListFor(m => m.StarRating,
+         new SelectList(Enum.GetValues(typeof(Movies.Models.StarRating))), "Star Rating", new { @class = "form-control", required = "required" })
+                </div>
+
+            </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Recommend, new { @class = "control-label  col-sm-5" })
+            <div class=" col-sm-7">
+                @Html.CheckBoxFor(m => m.Recommend, new { @class = "control-label" })
+            </div>
+
+        </div>
+
+
+            <div class="form-group">
+                @*Comments*@
+                @Html.LabelFor(m => m.Comments, new { @class = "control-label col-sm-5" })
+                <div class=" col-sm-7">
+                    @Html.TextAreaFor(m => m.Comments, new { @class = "form-control", required = "required"})
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class=" col-sm-offset-5 col-sm-7">
+                    <input type="submit" value="Submit" />
+                </div>
+            </div>
+
+        </div>
+   
+
+}
+
+
+
+
+
+

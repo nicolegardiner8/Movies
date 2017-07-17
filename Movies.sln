@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies", "Movies\Movies.csproj", "{23380E45-9850-443E-AEC8-8AF08A9BBF30}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Movies.Data", "Movies.Data\Movies.Data.sqlproj", "{21DB244C-FABF-4206-99A3-697A69E013AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{23380E45-9850-443E-AEC8-8AF08A9BBF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23380E45-9850-443E-AEC8-8AF08A9BBF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23380E45-9850-443E-AEC8-8AF08A9BBF30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21DB244C-FABF-4206-99A3-697A69E013AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21DB244C-FABF-4206-99A3-697A69E013AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21DB244C-FABF-4206-99A3-697A69E013AD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{21DB244C-FABF-4206-99A3-697A69E013AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21DB244C-FABF-4206-99A3-697A69E013AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21DB244C-FABF-4206-99A3-697A69E013AD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

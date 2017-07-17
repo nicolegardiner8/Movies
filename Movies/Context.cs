@@ -17,7 +17,7 @@ namespace Movies
         public DbSet<Review> Reviews { get; set; }
     }
 
-    public class MyInitializer : DropCreateDatabaseIfModelChanges<Context>
+    public class MyInitializer : DropCreateDatabaseAlways<Context>
     {
         protected override void Seed(Context context)
         {
